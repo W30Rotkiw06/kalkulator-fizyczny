@@ -1,0 +1,84 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'SQPOKA,FJMECM'}
+      name: label_1
+      properties: {role: headline, text: Kalkulator siły grawitacji}
+      type: Label
+    - layout_properties: {grid_position: 'IAAELZ,SICCFT'}
+      name: image_1
+      properties: {}
+      type: Image
+    - layout_properties: {grid_position: 'QDNAEY,CRAFLK'}
+      name: label_2
+      properties: {text: 'M1 [kg]'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,NFRWAD'}
+      name: m1
+      properties: {type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'QDNAEY,CIVOJQ'}
+      name: label_4
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,DABIWQ'}
+      name: m1_scinot
+      properties: {text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'KRFRDU,HTOACA'}
+      name: label_3
+      properties: {text: 'M2 [kg]'}
+      type: Label
+    - layout_properties: {grid_position: 'KRFRDU,PIEQCJ'}
+      name: m2
+      properties: {role: null, type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'KRFRDU,MNWZSP'}
+      name: label_5
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'KRFRDU,IXTOPZ'}
+      name: m2_scinot
+      properties: {text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'UDGBDC,BZPVON'}
+      name: radius
+      properties: {text: 'R [m]'}
+      type: Label
+    - layout_properties: {grid_position: 'UDGBDC,VLDMGE'}
+      name: r
+      properties: {type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'UDGBDC,LDEKCO'}
+      name: label_6
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'UDGBDC,OLMXUV'}
+      name: r_scinot
+      properties: {text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'BDAYYN,BLGVXO'}
+      name: result
+      properties: {border: '2', role: input-prompt}
+      type: Label
+    - event_bindings: {click: calculate_click}
+      layout_properties: {grid_position: 'BDAYYN,KLIKDK'}
+      name: calculate
+      properties: {align: right, role: filled-button, text: Calculate}
+      type: Button
+    layout_properties: {grid_position: 'HVTZAH,TKWDLF'}
+    name: outlined_card_1
+    properties: {col_widths: '{"HTOACA":10,"PIEQCJ":30,"MNWZSP":10,"IXTOPZ":10,"BZPVON":10,"VLDMGE":30,"LDEKCO":10,"OLMXUV":10,"CRAFLK":10,"NFRWAD":30,"CIVOJQ":10,"DABIWQ":10}', role: outlined-card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
