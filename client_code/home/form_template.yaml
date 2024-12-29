@@ -12,8 +12,9 @@ components:
   - layout_properties: {col_xs: 0, row: ZDUUUA, width_xs: 4}
     name: image_1
     properties:
-      height: 90
+      height: 121
       margin: [null, null, 0, null]
+      source: _/theme/flat.jpg
       spacing_below: none
     type: Image
   - data_bindings: []

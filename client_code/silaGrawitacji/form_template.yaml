@@ -7,7 +7,7 @@ components:
       type: Label
     - layout_properties: {grid_position: 'IAAELZ,SICCFT'}
       name: image_1
-      properties: {}
+      properties: {source: _/theme/IMG_1547.jpg}
       type: Image
     - layout_properties: {grid_position: 'QDNAEY,CRAFLK'}
       name: label_2
@@ -84,6 +84,15 @@ components:
   name: column_panel_1
   properties: {visible: true}
   type: ColumnPanel
+- event_bindings: {click: head_button_click}
+  layout_properties: {slot: title}
+  name: head_button
+  properties:
+    role: null
+    spacing:
+      padding: [null, null, 6, null]
+    text: Kalkulator
+  type: Button
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

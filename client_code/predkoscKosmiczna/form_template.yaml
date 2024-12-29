@@ -1,0 +1,87 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'SQPOKA,FJMECM'}
+      name: title
+      properties: {role: headline, text: Kalkulator pierwszej prędkości kosmicznej}
+      type: Label
+    - layout_properties: {grid_position: 'IAAELZ,SICCFT'}
+      name: speed_image
+      properties: {source: _/theme/1predkosc.jpg}
+      type: Image
+    - layout_properties: {grid_position: 'NJACHX,COUPEI'}
+      name: label_3
+      properties: {text: 'Która prędkość kosmiczna?'}
+      type: Label
+    - event_bindings: {change: wybor_predkosci_change}
+      layout_properties: {grid_position: 'NJACHX,WEPZJN'}
+      name: wybor_predkosci
+      properties:
+        items: ['1', '2']
+      type: DropDown
+    - layout_properties: {grid_position: 'QDNAEY,CRAFLK'}
+      name: label_2
+      properties: {text: 'M1 [kg]'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,NFRWAD'}
+      name: m1
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'QDNAEY,CIVOJQ'}
+      name: label_4
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,DABIWQ'}
+      name: m1_scinot
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'UDGBDC,BZPVON'}
+      name: radius
+      properties: {text: 'R [m]'}
+      type: Label
+    - layout_properties: {grid_position: 'UDGBDC,VLDMGE'}
+      name: r
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'UDGBDC,LDEKCO'}
+      name: label_6
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'UDGBDC,OLMXUV'}
+      name: r_scinot
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'BDAYYN,BLGVXO'}
+      name: result
+      properties: {border: '2', role: input-prompt}
+      type: Label
+    - event_bindings: {click: calculate_click}
+      layout_properties: {grid_position: 'BDAYYN,KLIKDK'}
+      name: calculate
+      properties: {align: right, role: filled-button, text: Calculate}
+      type: Button
+    layout_properties: {grid_position: 'GVBEEA,SLQEHF'}
+    name: outlined_card_1
+    properties: {col_widths: '{"BZPVON":10,"VLDMGE":30,"LDEKCO":10,"OLMXUV":10,"CRAFLK":10,"NFRWAD":30,"CIVOJQ":10,"DABIWQ":10,"COUPEI":50,"WEPZJN":10}', role: outlined-card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- event_bindings: {click: head_button_click}
+  layout_properties: {slot: title}
+  name: head_button
+  properties:
+    role: null
+    spacing:
+      padding: [null, null, 6, null]
+    text: Kalkulator
+  type: Button
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
