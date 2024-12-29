@@ -78,6 +78,12 @@ components:
   name: navbar_links
   properties: {}
   type: FlowPanel
+- components: []
+  event_bindings: {show: column_panel_1_show}
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {visible: true}
+  type: ColumnPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

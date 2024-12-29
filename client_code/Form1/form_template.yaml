@@ -1,0 +1,36 @@
+components:
+- components:
+  - layout_properties: {col_xs: 0, row: HSGBLC, width_xs: 12}
+    name: label_1
+    properties: {align: center, role: display, text: Kalkulator fizyczny}
+    type: Label
+  layout_properties: {grid_position: 'KZRXCH,SKBJCR'}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
+- components:
+  - layout_properties: {col_xs: 0, row: ZDUUUA, width_xs: 4}
+    name: image_1
+    properties:
+      height: 90
+      margin: [null, null, 0, null]
+      spacing_below: none
+    type: Image
+  - data_bindings: []
+    event_bindings: {click: button_1_click}
+    layout_properties: {col_xs: 0, row: GGDISR, width_xs: 4}
+    name: button_1
+    properties:
+      role: null
+      spacing:
+        margin: [0, null, null, null]
+        padding: [10, null, null, null]
+      spacing_above: none
+      text: Grawitacja i astronomia
+    type: Button
+  layout_properties: {grid_position: 'VAICKS,XLZXLE'}
+  name: grid_panel_2
+  properties: {}
+  type: GridPanel
+container: {type: ColumnPanel}
+is_package: true

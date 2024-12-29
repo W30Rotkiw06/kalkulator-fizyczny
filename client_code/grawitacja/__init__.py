@@ -17,5 +17,6 @@ class grawitacja(grawitacjaTemplate):
     g = 6.61 * pow(10, -11)
 
     gravity = (g *m1 *m2) / (r*r)
-    self.result.text = f"Result: {round(gravity, 3)} N"
-    
+    gravity = round(gravity, 3)
+    self.result.text = f"Result: {gravity} N"
+
