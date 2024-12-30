@@ -19,53 +19,82 @@ components:
   type: GridPanel
 - components:
   - components:
-    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+    - layout_properties: {grid_position: 'WPRBNY,HWPVXD'}
       name: photon_energy_image
       properties:
-        height: 121
+        alt_text: ''
+        background: ''
+        border: ''
+        border_radius: ''
+        display_mode: shrink_to_fit
+        foreground: ''
+        height: 91
+        horizontal_align: center
         margin: [null, null, 0, null]
+        role: null
         source: _/theme/light.jpg
+        spacing_above: none
         spacing_below: none
+        tooltip: ''
+        vertical_align: center
+        visible: true
       type: Image
     - event_bindings: {click: photon_energy_link_click}
-      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      layout_properties: {full_width_row: true, grid_position: 'VGZKTZ,LIWGTB'}
       name: photon_energy_link
       properties:
         align: center
+        background: li
+        bold: false
+        border: ''
+        col_spacing: medium
+        col_widths: ''
+        font: ''
         font_size: 16
+        foreground: ''
+        icon: ''
+        icon_align: left
+        italic: false
+        role: null
         spacing:
           margin: [0, null, null, null]
         spacing_above: none
+        spacing_below: small
         text: energia fotonu
+        text_padding: null
+        tooltip: ''
         underline: false
+        url: ''
+        visible: true
+        wrap_on: mobile
       type: Link
     layout_properties: {col_xs: 3, row: FPSBZR, width_xs: 3}
     name: photon_energy_panel
-    properties: {foreground: ''}
+    properties: {col_widths: '{}', foreground: ''}
     type: ColumnPanel
   - components:
     - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
-      name: orbit_escape_velocity_image
+      name: wave_image
       properties:
-        height: 121
+        height: 85
         margin: [null, null, 0, null]
         source: _/theme/1predkosc.jpg
         spacing_below: none
       type: Image
-    - event_bindings: {click: orbit_escape_velocity_link_click}
+    - event_bindings: {click: wave_link_click}
       layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
-      name: orbit_escape_velocity_link
+      name: wave_link
       properties:
         align: center
         font_size: 16
         spacing:
           margin: [0, null, null, null]
         spacing_above: none
-        text: 1. i 2. prędkość kosmiczna
+        text: długość fali wyemitowanej
         underline: false
       type: Link
     layout_properties: {col_xs: 6, row: FPSBZR, width_xs: 3}
-    name: gravity_panel_copy_3
+    name: wave_panel
     properties: {}
     type: ColumnPanel
   layout_properties: {grid_position: 'VAICKS,XLZXLE'}

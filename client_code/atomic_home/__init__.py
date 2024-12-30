@@ -13,8 +13,11 @@ class atomic_home(atomic_homeTemplate):
   def photon_energy_link_click(self, **event_args):
     anvil.open_form("atomic_home.energia_foton")
 
-  def orbit_escape_velocity_link_click(self, **event_args):
-    anvil.open_form("predkoscKosmiczna")
+
 
   def head_link_click(self, **event_args):
     open_form('home')
+
+  def wave_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    anvil.open_form('atomic_home.dlugosc_fali')

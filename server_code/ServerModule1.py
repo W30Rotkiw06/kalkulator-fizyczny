@@ -27,3 +27,18 @@ def calculate_photon_energy(f, unit_multiplicator):
   planck_const = 6.62* pow(10, -34)
   energy = planck_const * f * unit_multiplicator
   return format_number(energy, 3)
+
+@anvil.server.callable
+def calculate_wave(m, n, is_lambda):
+  planck_const = 6.62* pow(10, -34)
+  c = 3 * pow(10, 8)
+  e_m = (-13.606)/(m*m)
+  e_n = (-13.606)/(n*n)
+  delta_e = abs(e_m - e_n) * ( 1.6 * pow(10, -19))
+
+  if is_lambda:
+    wawe_lenght = (planck_const * c) / delta_e
+    return format_number(wawe_lenght, 3)
+  else:
+    wave_freq = delta_e / planck_const
+    return format_number(wave_freq, 3)
