@@ -331,5 +331,7 @@ roles:
   name: outlined-error
 - components: [TextBox, TextArea, DatePicker, DropDown]
   name: input-error
-- components: [button]
+- components: []
+  display_in_toolbox: true
   name: choose-button
+  title: choose-button

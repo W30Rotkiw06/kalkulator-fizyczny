@@ -1,0 +1,95 @@
+components:
+- components:
+  - components:
+    - layout_properties: {grid_position: 'SQPOKA,FJMECM'}
+      name: title
+      properties: {role: headline, text: Kalkulator energii fotonu}
+      type: Label
+    - layout_properties: {grid_position: 'IAAELZ,SICCFT'}
+      name: speed_image
+      properties: {source: _/theme/1predkosc.jpg}
+      type: Image
+    - layout_properties: {grid_position: 'NJACHX,COUPEI'}
+      name: unit_label
+      properties: {text: Jednostka}
+      type: Label
+    - event_bindings: {change: unit_choose_change}
+      layout_properties: {grid_position: 'NJACHX,WEPZJN'}
+      name: unit_choose
+      properties:
+        items: [eV, J]
+      type: DropDown
+    - layout_properties: {grid_position: 'DNONQS,RHWFHJ'}
+      name: unit_label_copy
+      properties: {text: Dana  λ (długość fali) czy f  (częstotliwość)}
+      type: Label
+    - event_bindings: {change: data_choose_change}
+      layout_properties: {grid_position: 'DNONQS,FKCJQH'}
+      name: data_choose
+      properties:
+        items: [λ, f]
+      type: DropDown
+    - layout_properties: {grid_position: 'QDNAEY,CRAFLK'}
+      name: lambda_f_label
+      properties: {text: 'λ [m]'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,NFRWAD'}
+      name: lambda_f
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'QDNAEY,CIVOJQ'}
+      name: label_4
+      properties: {text: '*10^'}
+      type: Label
+    - layout_properties: {grid_position: 'QDNAEY,DABIWQ'}
+      name: lambda_f_scinot
+      properties: {placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - layout_properties: {grid_position: 'BDAYYN,BLGVXO'}
+      name: result
+      properties: {border: '2', role: input-prompt}
+      type: Label
+    - event_bindings: {click: calculate_click}
+      layout_properties: {grid_position: 'BDAYYN,KLIKDK'}
+      name: calculate
+      properties:
+        align: right
+        role: filled-button
+        spacing:
+          padding: [null, 35, null, 35]
+        text: Calculate
+      type: Button
+    layout_properties: {grid_position: 'ZOHNXF,IPMXAQ'}
+    name: outlined_card_1
+    properties: {col_widths: '{"CRAFLK":20,"NFRWAD":20,"CIVOJQ":5,"DABIWQ":15,"COUPEI":45,"WEPZJN":15,"RHWFHJ":45,"FKCJQH":15,"BLGVXO":45,"KLIKDK":15}', role: outlined-card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - event_bindings: {click: to_gravity_link_click}
+    name: to_gravity_link
+    properties: {text: Grawitacja}
+    type: Link
+  - event_bindings: {click: to_atom_link_click}
+    name: to_atom_link
+    properties: {text: F. atomowa}
+    type: Link
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- event_bindings: {click: head_link_click}
+  layout_properties: {slot: title}
+  name: head_link
+  properties:
+    spacing:
+      margin: [null, null, 8, null]
+      padding: [8, null, null, null]
+    text: Kalkulator fizyczny
+  type: Link
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

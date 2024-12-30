@@ -27,6 +27,14 @@ class silaGrawitacji(silaGrawitacjiTemplate):
     
     
 
-  def head_button_click(self, **event_args):
+  def head_link_click(self, **event_args):
     open_form('home')
+
+  def to_gravity_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('gravity_home')
+
+  def to_atom_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('atomic_home')
 

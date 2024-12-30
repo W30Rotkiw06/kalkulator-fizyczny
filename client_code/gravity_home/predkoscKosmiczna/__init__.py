@@ -30,3 +30,10 @@ class predkoscKosmiczna(predkoscKosmicznaTemplate):
     else:
       self.title.text = "Kalkulator drugiej prędkości kosmicznej"
       self.speed_image.source = "_/theme/2predkosc.jpg"
+
+  def head_link_click(self, **event_args):
+    open_form('home')
+
+  def to_atom_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('atomic_home')

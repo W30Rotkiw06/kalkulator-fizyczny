@@ -14,4 +14,8 @@ class home(homeTemplate):
   def link_1_click(self, **event_args):
     open_form('gravity_home')
 
+  def atomic_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("atomic_home")
+
 

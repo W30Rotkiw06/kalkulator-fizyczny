@@ -74,16 +74,29 @@ components:
   name: content_panel
   properties: {col_widths: '{}'}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
+- components:
+  - event_bindings: {click: to_gravity_link_click}
+    layout_properties: {}
+    name: to_gravity_link
+    properties: {text: Grawitacja}
+    type: Link
+  - event_bindings: {click: to_atom_link_click}
+    name: to_atom_link
+    properties: {text: F. atomowa}
+    type: Link
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
-- components: []
-  event_bindings: {show: column_panel_1_show}
-  layout_properties: {slot: left-nav}
-  name: column_panel_1
-  properties: {visible: true}
-  type: ColumnPanel
+- event_bindings: {click: head_link_click}
+  layout_properties: {slot: title}
+  name: head_link
+  properties:
+    spacing:
+      margin: [null, null, 8, null]
+      padding: [8, null, null, null]
+    text: Kalkulator fizyczny
+  type: Link
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
