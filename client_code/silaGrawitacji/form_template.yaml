@@ -84,15 +84,6 @@ components:
   name: column_panel_1
   properties: {visible: true}
   type: ColumnPanel
-- event_bindings: {click: head_button_click}
-  layout_properties: {slot: title}
-  name: head_button
-  properties:
-    role: null
-    spacing:
-      padding: [null, null, 6, null]
-    text: Kalkulator
-  type: Button
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

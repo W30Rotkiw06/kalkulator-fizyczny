@@ -1,0 +1,69 @@
+components:
+- components:
+  - layout_properties: {col_xs: 0, row: HSGBLC, width_xs: 12}
+    name: label_1
+    properties: {align: center, role: display, text: Grawitacja}
+    type: Label
+  layout_properties: {grid_position: 'KZRXCH,SKBJCR'}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
+- components:
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: gravity_force_image
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/IMG_1547.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: grav_force_link
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: Siła grawitacji
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 3, row: FPSBZR, width_xs: 3}
+    name: gravity_force_panel
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: orbit_escape_velocity_image
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/1predkosc.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: orbit_escape_velocity_link
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: 1. i 2. prędkość kosmiczna
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 6, row: FPSBZR, width_xs: 3}
+    name: gravity_panel_copy_3
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {grid_position: 'VAICKS,XLZXLE'}
+  name: grid_panel_2
+  properties:
+    spacing:
+      margin: [4, null, null, null]
+  type: GridPanel
+container: {type: ColumnPanel}
+is_package: true

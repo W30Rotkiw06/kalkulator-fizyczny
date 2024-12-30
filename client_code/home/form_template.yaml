@@ -9,29 +9,111 @@ components:
   properties: {}
   type: GridPanel
 - components:
-  - layout_properties: {col_xs: 0, row: ZDUUUA, width_xs: 4}
-    name: image_1
-    properties:
-      height: 121
-      margin: [null, null, 0, null]
-      source: _/theme/flat.jpg
-      spacing_below: none
-    type: Image
-  - data_bindings: []
-    event_bindings: {click: button_1_click}
-    layout_properties: {col_xs: 0, row: GGDISR, width_xs: 4}
-    name: button_1
-    properties:
-      role: null
-      spacing:
-        margin: [0, null, null, null]
-        padding: [10, null, null, null]
-      spacing_above: none
-      text: Grawitacja i astronomia
-    type: Button
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: gravity_image
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/flat.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: grav_link
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: Grawitacja i astronomia
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 0, row: FPSBZR, width_xs: 3}
+    name: gravity_panel
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: gravity_image_copy_3
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/flat.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: grav_link_copy_3
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: Grawitacja i astronomia
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 3, row: FPSBZR, width_xs: 3}
+    name: gravity_panel_copy_3
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: gravity_image_copy_2
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/flat.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: grav_link_copy_2
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: Grawitacja i astronomia
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 6, row: FPSBZR, width_xs: 3}
+    name: gravity_panel_copy_2
+    properties: {}
+    type: ColumnPanel
+  - components:
+    - layout_properties: {grid_position: 'XDSVLT,QHFXLV'}
+      name: gravity_image_copy
+      properties:
+        height: 121
+        margin: [null, null, 0, null]
+        source: _/theme/flat.jpg
+        spacing_below: none
+      type: Image
+    - event_bindings: {click: link_1_click}
+      layout_properties: {grid_position: 'VGZKTZ,LIWGTB'}
+      name: grav_link_copy
+      properties:
+        align: center
+        font_size: 16
+        spacing:
+          margin: [0, null, null, null]
+        spacing_above: none
+        text: Grawitacja i astronomia
+        underline: false
+      type: Link
+    layout_properties: {col_xs: 9, row: FPSBZR, width_xs: 3}
+    name: gravity_panel_copy
+    properties: {}
+    type: ColumnPanel
   layout_properties: {grid_position: 'VAICKS,XLZXLE'}
   name: grid_panel_2
-  properties: {}
+  properties:
+    spacing:
+      margin: [4, null, null, null]
   type: GridPanel
 container: {type: ColumnPanel}
 is_package: true
