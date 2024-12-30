@@ -6,8 +6,8 @@ components:
       properties: {role: headline, text: Kalkulator długości emitowanego fotonu przez wodór}
       type: Label
     - layout_properties: {grid_position: 'IAAELZ,SICCFT'}
-      name: speed_image
-      properties: {source: _/theme/hydrogen.png}
+      name: hydrogen_image
+      properties: {source: _/theme/hydrogen_em.png}
       type: Image
     - layout_properties: {grid_position: 'DNONQS,RHWFHJ'}
       name: unit_label_copy
@@ -17,23 +17,26 @@ components:
       layout_properties: {grid_position: 'DNONQS,FKCJQH'}
       name: data_choose
       properties:
+        bold: true
         items: [λ, f]
       type: DropDown
-    - layout_properties: {grid_position: 'FGVCYL,ACTYFV'}
-      name: m_label
-      properties: {text: m}
-      type: Label
-    - layout_properties: {grid_position: 'FGVCYL,SMOQRX'}
-      name: m
-      properties: {placeholder: '0', text: '0', type: number}
-      type: TextBox
-    - layout_properties: {grid_position: 'DGKIKU,QUUAUJ'}
+    - layout_properties: {grid_position: 'FGVCYL,ACTYFV YVLZZJ,NLLKPX'}
       name: n_label
-      properties: {text: n}
+      properties: {text: numer początkowego poziomu energetycznego elektronu (n)}
       type: Label
-    - layout_properties: {grid_position: 'DGKIKU,RPXPOD'}
+    - layout_properties: {grid_position: 'FGVCYL,ACTYFV CQFHJP,IAAGDE'}
+      name: m_label
+      properties: {text: numer końcowego poziomu energetycznego elektronu (m)}
+      type: Label
+    - event_bindings: {change: m_n_change}
+      layout_properties: {grid_position: 'FGVCYL,SMOQRX ZPLKUS,IPDRES'}
       name: n
-      properties: {placeholder: '0', text: '0', type: number}
+      properties: {bold: true, placeholder: '0', text: '0', type: number}
+      type: TextBox
+    - event_bindings: {change: m_n_change}
+      layout_properties: {grid_position: 'FGVCYL,SMOQRX PDQTCH,HOFBML'}
+      name: m
+      properties: {bold: true, placeholder: '0', text: '0', type: number}
       type: TextBox
     - layout_properties: {grid_position: 'BDAYYN,BLGVXO'}
       name: result
@@ -47,11 +50,11 @@ components:
         role: filled-button
         spacing:
           padding: [null, 35, null, 35]
-        text: Calculate
+        text: Oblicz
       type: Button
     layout_properties: {grid_position: 'ZOHNXF,IPMXAQ'}
     name: outlined_card_1
-    properties: {col_widths: '{"RHWFHJ":45,"FKCJQH":15,"BLGVXO":45,"KLIKDK":15}', role: outlined-card}
+    properties: {col_widths: '{"RHWFHJ":45,"FKCJQH":15,"BLGVXO":45,"KLIKDK":15,"ACTYFV":45,"SMOQRX":15}', role: outlined-card}
     type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel

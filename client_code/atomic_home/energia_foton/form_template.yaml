@@ -17,6 +17,7 @@ components:
       layout_properties: {grid_position: 'NJACHX,WEPZJN'}
       name: unit_choose
       properties:
+        bold: true
         items: [eV, J]
       type: DropDown
     - layout_properties: {grid_position: 'DNONQS,RHWFHJ'}
@@ -27,6 +28,7 @@ components:
       layout_properties: {grid_position: 'DNONQS,FKCJQH'}
       name: data_choose
       properties:
+        bold: true
         items: [λ, f]
       type: DropDown
     - layout_properties: {grid_position: 'QDNAEY,CRAFLK'}
@@ -35,7 +37,7 @@ components:
       type: Label
     - layout_properties: {grid_position: 'QDNAEY,NFRWAD'}
       name: lambda_f
-      properties: {placeholder: '0', text: '0', type: number}
+      properties: {bold: true, placeholder: '0', text: '0', type: number}
       type: TextBox
     - layout_properties: {grid_position: 'QDNAEY,CIVOJQ'}
       name: label_4
@@ -43,7 +45,7 @@ components:
       type: Label
     - layout_properties: {grid_position: 'QDNAEY,DABIWQ'}
       name: lambda_f_scinot
-      properties: {placeholder: '0', text: '0', type: number}
+      properties: {bold: true, placeholder: '0', text: '0', type: number}
       type: TextBox
     - layout_properties: {grid_position: 'BDAYYN,BLGVXO'}
       name: result
@@ -57,7 +59,7 @@ components:
         role: filled-button
         spacing:
           padding: [null, 35, null, 35]
-        text: Calculate
+        text: Oblicz
       type: Button
     layout_properties: {grid_position: 'ZOHNXF,IPMXAQ'}
     name: outlined_card_1

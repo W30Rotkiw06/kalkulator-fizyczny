@@ -32,7 +32,7 @@ components:
         horizontal_align: center
         margin: [null, null, 0, null]
         role: null
-        source: _/theme/light.jpg
+        source: _/theme/photons.png
         spacing_above: none
         spacing_below: none
         tooltip: ''
@@ -78,7 +78,7 @@ components:
       properties:
         height: 85
         margin: [null, null, 0, null]
-        source: _/theme/1predkosc.jpg
+        source: _/theme/hydrogen_em.png
         spacing_below: none
       type: Image
     - event_bindings: {click: wave_link_click}
